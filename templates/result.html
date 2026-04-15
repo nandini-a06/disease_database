@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+    <h1>🔍 Disease: {{ disease }}</h1>
+
+    {% if info %}
+        <h2>{{ info.title }}</h2>
+        <p>{{ info.summary }}</p>
+    {% else %}
+        <p>No information found for this disease.</p>
+    {% endif %}
+
+    <br>
+    <a href="/">🔙 Search Again</a>
+
+</body>
+</html>
